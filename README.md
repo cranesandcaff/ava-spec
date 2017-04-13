@@ -52,6 +52,18 @@ feature('Cash withdrawal.', scenario => {
 });
 ```
 
+Or write stories:
+
+```js
+import {Story} from 'ava-spec';
+
+Story('Cash withdrawal.', chapter => {
+  chapter('Not enough money in ATM', t => {
+    // Cucumber-like keywords are available
+  });
+});
+```
+
 Or just group tests together:
 
 ```js
